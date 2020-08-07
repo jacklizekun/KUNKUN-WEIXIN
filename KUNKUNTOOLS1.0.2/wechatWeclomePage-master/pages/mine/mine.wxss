@@ -1,0 +1,294 @@
+/**index.wxss**/
+.container{
+  width: 100%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(212, 206, 206);
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.menu-parent-item{
+  width:100%;
+}
+.index_h1 {
+  font-size:14px;
+  line-height: 20px;
+  width: 90%; 
+  margin: 0 auto; 
+}
+.menu-wrp{
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.menu-item{
+  width: 25%;
+  box-sizing: border-box;
+  float:left;
+  text-align: center;
+}
+.menu-icon{
+  width:30px;
+  height: 30px;
+  margin-top: 20px;
+}
+.menu-font{
+  font-size: 12px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background: #F5F4F9;
+}
+/* pages/about/about.wxss */
+
+.abimgbox {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.logoimg {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.logntext {
+  margin-top: 10rpx;
+}
+
+.mybbox {
+  margin-top: 40rpx;
+  padding: 40rpx;
+  width: 100%;
+}
+
+.mybox {
+  width: 97%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: linear-gradient(to left,  #55a3e2,#bedeec);
+  border-radius: 20rpx;
+}
+
+.linbox {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: linear-gradient(to left,  #f86e6e,#d5f7ba);
+  border-radius: 20rpx;
+}
+
+.imgbox {
+  width: 20%;
+  display: inline-block;
+}
+
+.textbox {
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+}
+
+.myimg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.myimg1 {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.card {
+  padding: 20rpx;
+  width: 100%;
+  
+}
+.cardTitle {
+  padding: 10rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.ivestment-c{
+  position: relative;
+  box-sizing:border-box;
+  background-color: #fff;
+  padding: 20rpx 0;
+  width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+  height: auto;
+}
+.ivestment-i{
+  position: relative;  
+}
+
+
+.invest-l{
+  width: 100%;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;  
+  position: relative;
+}
+
+.demo-flex-1{
+  flex:1;
+  margin-left: 40rpx;
+}
+.invest-b{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 40rpx;
+  height: 100%;
+  text-align: center;
+
+  
+}
+.invest-line::before{
+  position: absolute;
+  display: inline-block;
+  top:50%;
+  left: 50%;
+  content: " ";
+  margin-top: -9rpx;
+  margin-left: -9rpx;
+  width:18rpx;
+  height:18rpx;
+  background:#398af4;
+  border-radius:50%;
+  z-index: 10;
+}
+.invest-line::after{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 50%;
+  content: " ";
+  margin-left: -1rpx;
+  width: 2rpx;
+  height: 100%;
+  background-color: #398af4;
+  z-index: 5;
+}
+
+.invest-line1::before{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  display: inline-block;
+  content: " ";
+  width:10rpx;
+  height:10rpx;
+  margin-top: -9rpx;
+  margin-left: -9rpx;
+
+
+
+
+  border:8rpx solid #398af4;
+  border-radius:50%;
+  background-color: #fff;
+  z-index: 10;
+}
+.invest-line1::after{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 50%;
+  content: " ";  
+  width: 2rpx;
+  margin-left: -1rpx;
+  height: 100%;
+  background-color: #398af4;
+  z-index: 5;
+}
+.invest-line2::after{
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 50%;
+  content: " ";  
+  width: 2rpx;
+  margin-left: -1rpx;
+  height: 100%;
+  background-color: #398af4;
+  z-index: 5;
+}
+.ivestment-i:nth-child(1) .invest-line::after{
+  top: 36rpx;
+}
+.showBox {
+  transition: all .6s ease;
+  height: auto;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.hideBox {
+  transition: all .6s ease;
+  height: 0;
+  padding: 0;
+}
+.textBox {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.rotateUp {
+  transition: all .6s ease;
+  transform:rotate(0deg);
+}
+.rotateDown {
+  transition: all .6s ease;
+  transform:rotate(180deg);
+}
+.rotateUp1 {
+  transition: all .6s ease;
+  transform:rotate(270deg);
+}
+.rotateDown1 {
+  transition: all .6s ease;
+  transform:rotate(90deg);
+}
+.mybox1 {
+  width: 97%;
+  padding: 20rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+  background: linear-gradient(to left,  #d458ec,#d5edf5);
+  border-radius: 20rpx;
+ 
+}
+.mybox2 {
+  width: 97%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: linear-gradient(to left,  #6bb30e,#fcfbb6);
+  border-radius: 20rpx;
+}

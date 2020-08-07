@@ -1,0 +1,27 @@
+<!--history.wxml-->
+
+<view class="content">
+  <view class="layout-top">
+    <view class="screen">
+     计算历史记录
+    </view>
+  </view>
+  <block wx:for="{{logs}}" wx:for-item="log">
+      <view class="item">{{log}}</view>
+  </block>
+<!--<scroll-view scroll-y="true" scroll-x="true" style="height: 500px;" >-->
+  
+  <!--<view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>
+  <view class="item">1</view>-->
+<!--</scroll-view>-->
+</view>

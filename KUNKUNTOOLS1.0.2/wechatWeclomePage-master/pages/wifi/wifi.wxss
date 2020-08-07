@@ -1,0 +1,98 @@
+#api_title {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+/*网络类型样式*/
+.network_info_area {
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F8F8F8;
+}
+.network_info_title {
+  margin-top: 10rpx;
+  margin-bottom: 50rpx;
+  font-size: 32rpx;
+}
+.network_info_prompt {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color: #ccc;
+}
+.info_network_type {
+  font-size: 80rpx;
+  font-weight: bold;
+}
+.network_info_btn {
+  margin-top: 10rpx;
+  display: flex;
+}
+/*系统信息样式*/
+.system_info_body {
+  margin-top: 20rpx;
+}
+.system_info_area {
+  background: #F8F8F8;
+}
+.system_info_single {
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #eee;
+  height: 88rpx;
+  font-size: 34rpx;
+}
+.system_info_title {
+  width: 180rpx;
+  color: #000;
+}
+.system_info_value {
+  flex-grow: 1
+}
+.system_info_btn {
+  margin-top: 10rpx;
+  padding: 0 20rpx;
+}
+.mybutton{
+    width: 600rpx;
+    height: 80rpx;
+    color: #f3f5f7;
+    background-color: #9bc6f8;
+    border: 3rpx solid #9bc6f8;
+    border-radius: 80rpx;
+    font-size: 35rpx;
+    margin-top: 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bt_ok{
+  width: 200rpx;
+  height: 70rpx;
+  color: #f3f5f7;
+  background-color: #9bc6f8;
+  border: 3rpx solid #9bc6f8;
+  border-radius: 80rpx;
+  font-size: 35rpx;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bt_no{
+  width: 200rpx;
+  height: 70rpx;
+  color: #f3f5f7;
+  background-color: #e7743e;
+  border: 3rpx solid #e7743e;
+  border-radius: 80rpx;
+  font-size: 35rpx;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

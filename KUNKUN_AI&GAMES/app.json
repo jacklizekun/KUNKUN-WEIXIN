@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/PictureDetail/PictureDetail",
+    "pages/beautyPicture/beautyPicture",
+    "pages/FontDetail/FontDetail",
+    "pages/saolei/saolei",
+    "pages/chima/chima",
+    "pages/bird/bird",
+    "pages/snake/snake",
+    "pages/2048/2048",
+    "pages/plain/plain",
+    "pages/wuziqi/wuziqi",
+    "pages/blackwhieblock/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "坤坤小工具",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "工具",
+        "iconPath": "images/bar/home.png",
+        "selectedIconPath": "images/bar/home2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "天气",
+        "iconPath": "images/bar/weather.png",
+        "selectedIconPath": "images/bar/weather2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/bar/mine.png",
+        "selectedIconPath": "images/bar/mine2.png"
+      }
+    ]
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"请点击确定"
+    }
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

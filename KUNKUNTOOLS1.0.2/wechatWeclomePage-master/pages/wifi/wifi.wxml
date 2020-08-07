@@ -1,0 +1,58 @@
+<view class="container">
+
+<!--获取网络类型API-->
+  <view class="network_info_body">
+      <view class="network_info_area">
+          <view class="network_info_title">网络状态</view>
+          <block wx:if="{{ hasNetworkType == false }}">
+              <text class="network_info_prompt"></text>
+
+          </block>
+          <block wx:if="{{ hasNetworkType == true }}">
+              <text class="info_network_type">{{ networkType }}</text>
+          </block>
+      </view>
+      <view class="network_info_btn">
+          <button  class="bt_ok" bindtap="getNetworkType">获取</button>
+          <button class="bt_no" bindtap="clear">清空</button>
+      </view>
+  </view>
+<!--获取系统信息API-->
+  <view class="system_info_body">
+      <view class="system_info_area">
+          <view class="system_info_single">
+              <text class="system_info_title">手机型号</text>
+              <input class="system_info_value" disabled="{{ true }}" type="text" placeholder="" value="{{ systemInfo.model }}"/>
+          </view>
+          <view class="system_info_single">
+              <text class="system_info_title">微信版本</text>
+              <input class="system_info_value" disabled="{{ true }}" type="text" placeholder="" value="{{ systemInfo.version }}"/>
+          </view>
+          <view class="system_info_single">
+              <text class="system_info_title">微信语言</text>
+              <input class="system_info_value" disabled="{{ true }}" type="text" placeholder="" value="{{ systemInfo.language }}"/>
+          </view>
+          <view class="system_info_single">
+              <text class="system_info_title">屏幕宽度</text>
+              <input class="system_info_value" disabled="{{ true }}" type="text" placeholder="" value="{{ systemInfo.windowWidth }}"/>
+          </view>
+          <view class="system_info_single">
+              <text class="system_info_title">屏幕高度</text>
+              <input class="system_info_value" disabled="{{ true }}" type="text" placeholder="" value="{{ systemInfo.windowHeight }}"/>
+          </view>
+          <view class="system_info_single">
+              <text class="system_info_title">设备像素</text>
+              <input class="system_info_value" disabled="{{ true }}" type="text" placeholder="" value="{{ systemInfo.pixelRatio }}"/>
+          </view>            
+      </view>
+      <view class="system_info_btn">
+          <button class="mybutton" bindtap="getSystemInfo">获取手机系统信息</button>
+      </view>
+  </view>
+<!--图片API-->
+
+
+
+
+
+</view>

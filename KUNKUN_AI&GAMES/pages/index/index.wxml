@@ -1,0 +1,156 @@
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="category">
+  <view class="category_item" bindtap="PictureDetail0">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>看题说话</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item"bindtap="PictureDetail1">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>美食识别</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="beautyPicture0">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>换装</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="beautyPicture1">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>大头贴</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="FontDetail0">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>手写体检测</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="FontDetail1">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>通用orc</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="SaoLei">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>扫雷</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="ChiMa">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>尺码</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="WuZiQi">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>五子棋</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="Bird">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>鸟</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="Snake">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>贪吃蛇</text>
+      </view>
+    </view>
+  </view>
+    <view class="category_item" bindtap="2048">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>2048</text>
+      </view>
+    </view>
+   <view class="category_item" bindtap="Plain">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>Plain</text>
+      </view>
+    </view>
+   </view>
+  </view>
+
+    <view class="category_item" bindtap="BlackBlock">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="../../images/bar/home.png" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>别踩白块</text>
+      </view>
+    </view>
+   </view>
+
+
+
+</view>

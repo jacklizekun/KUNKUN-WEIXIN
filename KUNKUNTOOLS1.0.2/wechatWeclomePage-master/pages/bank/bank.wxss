@@ -1,0 +1,36 @@
+.content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0 5rpx;
+}
+.item{
+  width: 95%;
+  line-height: 100rpx;
+  margin-top: 3rpx;
+  margin-bottom: 3rpx;
+  border-radius: 3px;
+  padding-left: 3rpx;
+  color: #fef4e9;
+  border: 1px solid #9bc6f8;
+  background: #9bc6f8;
+}
+.layout-top{
+  width: 95%;
+  margin-bottom: 30rpx;
+}
+.screen {
+  text-align: right;
+  width: 95%;
+  line-height: 120rpx;
+  text-align: end;
+  padding: 0 10rpx;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+  box-sizing: border-box;
+  border-top: 1px solid rgb(232, 246, 255);
+}

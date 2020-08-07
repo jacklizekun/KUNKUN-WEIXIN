@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="title">
+  <view class="title-item">{{city}}</view>
+  <view class="title-item">天气情况</view>
+  
+</view>
+
+<view class="images">
+  <image class="image" src="../../images/fj02.jpg"></image>
+  <view class="words">
+  <view class="temp">当前温度{{temp}}℃</view>
+  <view class="temp">{{temperature}}</view>
+  <view class="temp">{{type}}</view>
+  <view class="temp" style="font-size: 40px; color: #fff;">{{city}}</view>
+  <view class="temp">{{date}}</view>
+  <view class="temp">{{direction}}</view>
+  <!-- <view class="temp">{{condition}}</view> -->
+  <!-- <view class="temp">{{futureArray}}</view> -->
+</view>
+<view class="future_work">未来5天天气情况</view>
+<block wx:for="{{futureArray}}" wx:key="{{index}}">
+  <view wx:if="{{condition>5}}" class="future_count">
+ 
+      <view class="future_details">{{item.temperature}}</view>
+      <view class="future_details">{{item.weather}}</view>
+      <view class="future_details">{{item.date}}</view>
+      <view class="future_details">{{item.direct}}</view>
+  </view>
+</block>
+</view>
+

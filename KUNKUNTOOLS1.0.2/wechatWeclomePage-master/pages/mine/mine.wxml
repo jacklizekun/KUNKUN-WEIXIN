@@ -1,0 +1,98 @@
+<view class="container">
+  <view class="userinfo">
+    <block >
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <!--第一部分-->
+<view class="card">
+  <view class="cardTitle">
+    <view class="mybox1">
+      <view class="imgbox">
+        <image src="../../images/zuozhe.png" class="myimg"/>
+      </view>
+      <view class="textbox fs25 fcff">
+        <view class="textBox rotateDown1">
+         </view>
+        <view>坤坤</view>
+        <view>此微信小程序开发者</view> 
+      </view>
+    </view>
+  </view>
+
+</view>
+  <!--第二部分-->
+<view class="card">
+  <view class="cardTitle" bindtap="changeUpDown2">
+    <view class="mybox2">
+      <view class="imgbox">
+        <image src="../../images/bug.png" class="myimg"/>
+      </view>
+      <view class="textbox fs25 fcff">
+        <view class="textBox {{showUp2?'rotateDown1':'rotateUp1'}}">
+          <image class="myimg1" src="../../images/anniu.png"></image>
+         </view>
+        <view>关于</view>
+        <view>更多作者信息</view> 
+      </view>
+    </view>
+  </view>
+  <view class="ivestment-c {{showUp2?'hideBox':'showBox'}}">
+    <view class="ivestment-i" wx:for="{{dataList2}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+      <view class="invest-l">
+        <view class="invest-b invest-line">
+          <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        </view>
+        <view class="demo-flex-1 font-28r color-3" style="line-height: 30rpx;color: #c2c2d6;font-size:20rpx">{{item.startTime}}</view>
+      </view>
+      <view class="invest-l">
+        <view class="invest-b invest-line2">
+          <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        </view>
+        <view class="demo-flex-1">
+          <view class="font-12 color-6 awardUnit" style="line-height: 40rpx;margin-top: 12rpx;margin-bottom: 15rpx;color: #66b2ff;font-size:30rpx">{{item.experience}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+ <!--第三部分-->
+<view class="card">
+  <view class="cardTitle" bindtap="changeUpDown3">
+    <view class="mybox">
+      <view class="imgbox">
+        <image src="../../images/zhixie.png" class="myimg"/>
+      </view>
+      <view class="textbox fs25 fcff">
+        <view class="textBox {{showUp3?'rotateDown1':'rotateUp1'}}">
+          <image class="myimg1" src="../../images/anniu.png"></image>
+         </view>
+        <view>致谢</view>
+        <view>创作灵感和学习历程</view> 
+      </view>
+    </view>
+  </view>
+  <view class="ivestment-c {{showUp3?'hideBox':'showBox'}}">
+    <view class="ivestment-i" wx:for="{{dataList3}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+      <view class="invest-l">
+        <view class="invest-b invest-line">
+          <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        </view>
+        <view class="demo-flex-1 font-28r color-3" style="line-height: 30rpx;color: #c2c2d6;font-size:20rpx">{{item.startTime}}</view>
+      </view>
+      <view class="invest-l">
+        <view class="invest-b invest-line2">
+          <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        </view>
+        <view class="demo-flex-1">
+          <view class="font-12 color-6 awardUnit" style="line-height: 40rpx;margin-top: 12rpx;margin-bottom: 15rpx;color: #66b2ff;font-size:30rpx">{{item.experience}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  </view>
